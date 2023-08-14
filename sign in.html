@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="https://kit.fontawesome.com/81cca1c028.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sign in.css">
+    <link rel="icon" href="photo/new logo.png">
+   
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="photo/looogoo.png"  width="80" alt="" srcset=""></a>
+        <nav class="navigation ">
+            <a href="#Home">Home</a>
+            <a href="order.html" target="_blank">Order</a>
+            <a href="reservation.html" target="_blank">Reservation</a>
+            <a href="#Contact Us" >Contact Us</a>
+            <a href="add-to.html" >Add To Carte</a>
+            <a href="sign in.html " target="_blank"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+    <section class="main">
+        <!-- <h2 class="title">Reservation</h2> -->
+       
+       <div class="container">
+           <form class="reservation-form"  action="sign-in.php" method="post">
+               <h2>Be a mumber of our community</h2>
+               <div class="form-group">
+                   <label for="name">Full Name:</label>
+                   <input type="text" id="name" name="Name" required>
+               </div>
+               <div class="form-group">
+                   <label for="date">Date of birth:</label>
+                   <input type="date" id="date" name="date"  min="1980-01-01" max="2005-12-31" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="Email" name="Email" required>
+                </div>
+           <div class="form-group">
+               <label for="service">Select a service:</label>
+               <select id="service" name="service" required>
+                   <option value="">Please select</option>
+                   <option value="Manager">Manager</option>
+                   <option value="Server/Waiter/Waitress">Server/Waiter/Waitress</option>
+                   <option value="Host/Hostess">Host/Hostess</option>
+                   <option value="Busser/Runner">Busser/Runner</option>
+                   <option value="Dishwasher">Dishwasher</option>
+                   <option value="Cashier">Cashier</option>
+                   <option value="Expeditor/Food Runner">Expeditor/Food Runner</option>
+                   <option value="Order Packer">Order Packer</option>
+                   <option value="Delivery Driver">Delivery Driver</option>
+                   <option value="Customer Service Representatives">Customer Service Representatives</option>
+                   <option value="IT/Technical Support">IT/Technical Support</option>
+                   <option value="Marketing/Advertising Team">Marketing/Advertising Team</option>
+                   
+               </select>
+           </div>   
+               <div class="form-group">
+                   <label for="type">Type of work</label>
+                   <select id="type" name="type" required>
+                       <option value="">Please select</option>
+                       <option value="Online/remotely">Online/remotely</option>
+                       <option value="On-site">On-site</option>
+                   </select>                
+               </div>
+
+               <button type="submit" name="sign-submit" class="main-btn">Sign In</button>            </div>
+      
+       </div>
+
+</section>
+
+</body>
+<footer class="footer">
+<p class="footer-title">Copyright @<span>WIIBOU</span></p>
+<div class="social-icons">
+   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+   <a href="#"><i class="fa-brands fa-twitter "></i></a>
+   <a href="#"><i class="fa-brands fa-github"></i></a>
+   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+</div>
+</footer>
+</html>
+</html>

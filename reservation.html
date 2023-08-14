@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Reservation</title>
+    <script src="https://kit.fontawesome.com/81cca1c028.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="icon" href="photo/new logo.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="photo/looogoo.png"  width="80" alt="" srcset=""></a>
+        <nav class="navigation ">
+            <a href="#Home">Home</a>
+            <a href="order.html" target="_blank">Order</a>
+            <a href="reservation.html" target="_blank">Reservation</a>
+            <a href="#Contact Us" >Contact Us</a>
+            <a href="add-to.html" >Add To Carte</a>
+            <a href="sign in.html " target="_blank"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+    <section class="main">
+             <!-- <h2 class="title">Reservation</h2> -->
+            <div class="container">
+                <form class="reservation-form"  action="reservation.php" method="post">
+                    <h2>Make a Reservation</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" min="2023-05-16" max="2023-12-31" required>
+                    </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Please select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10+">10+</option>
+                    </select>
+                </div>   
+                    <div class="form-group">
+                        <label for="table">Choose a Table:</label>
+                        <select id="table" name="table" required>
+                            <option value="">Please select</option>
+                            <option value="1">Table 1</option>
+                            <option value="2">Table 2</option>
+                            <option value="3">Table 3</option>
+                            <option value="4">Table 4</option>
+                            <option value="5">Table 5</option>
+                        </select>                
+                    </div>
+
+                    <button type="submit" class="main-btn">Reserve</button>            </div>
+           
+            </div>
+
+    </section>
+    <script src="resscript.js"></script>
+    
+</body>
+<footer class="footer">
+    <p class="footer-title">Copyright @<span>WIIBOU</span></p>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter "></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+   </footer>
+</html>
+</html>
